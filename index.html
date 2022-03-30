@@ -255,6 +255,12 @@
           alert('DEAR FRIEND, LASU ONLY ADMITS CANDIDATES WHO SCORED A MINIMUM OF 190 IN THE LAST CONDUCTED UTME..YOU ARE ADVICED TO DO A CHANGE OF SCHOOL! THANKS.')
                 return false;
             }
+            for (var i = 0; i<jamb.length; i++) {
+            if (jamb[i] == ".") {
+              alert("HELLO USER, PLEASE NOTE THAT YOU CAN'T HAVE A DECIMAL POINT IN YOUR JAMB SCORE")
+           return false;
+            }
+            }
     var jamb = document.getElementById('utm').value;
     var jambs = Number(jamb)/8;
     var waec = option1+option2+option3+option4+option5;
